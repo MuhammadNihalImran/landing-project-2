@@ -1,0 +1,208 @@
+@font-face {
+  font-family: A;
+  src: url(./Gilroy-ExtraBold.otf);
+  font-family: B;
+  src: url(./Gilroy-Light.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: A;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: black;
+}
+#left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+
+  background-color: #fff;
+}
+#lnav-left {
+  display: flex;
+  margin: 40px 0px 0px 40px;
+  font-size: 32px;
+  font-weight: 900;
+  opacity: 0.3;
+}
+#lnav-right {
+  width: 55%;
+  height: 11%;
+  /* background: #0000003f; */
+  /* border: 1px solid #000; */
+  display: flex;
+  gap: 50px;
+}
+#lnav-right > a {
+  /* margin-bottom: 0; */
+  margin-top: 40px;
+  /* margin: 40px 40px 0px 0px; */
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  color: #000;
+  opacity: 0.3;
+  /* padding-bottom: 1em;
+    border-bottom: 2px solid #cabebe; */
+}
+#lnav-right > a:hover {
+  opacity: 10;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #cabebe;
+}
+#lnav-right > i {
+  margin-top: 40px;
+  /* margin-right: ; */
+  /* margin: 40px 70px 0px 0px; */
+  font-size: 24px;
+  color: royalblue;
+}
+#textCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 20px;
+  /* background-color: #000; */
+}
+#textCenter > h1 {
+  font-size: 64px;
+  margin-bottom: 50px;
+}
+#textCenter > p {
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0.4;
+}
+#textCenter > a {
+  /* line-height: 6em */
+  position: absolute;
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #cabebe;
+}
+#right {
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.322);
+}
+#rtop {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: aqua;
+}
+#rtop-left {
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1551445523-324a0fdab051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGFwcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+#rtop-right {
+  width: 45%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1570598383310-fc553b759221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGFwcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+
+#rbottom {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1674473708374-0950924e38d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+#rb-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 150px;
+  height: 70px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  /* font-size: 2px; */
+}
+#rb-left > i {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1150px) {
+  #main {
+    flex-direction: row;
+  }
+  #left {
+    width: 50%;
+    height: 100%;
+  }
+  #right {
+    width: 50%;
+    height: 100%;
+  }
+  #lnav-right {
+    display: flex;
+    gap: 0;
+  }
+  #lnav-right > a {
+    font-size: 1.2em;
+    margin-right: 29px;
+  }
+  #lnav-left > i {
+    font-size: 20px;
+  }
+  #rb-left {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #main {
+    flex-direction: column;
+  }
+  #left {
+    width: 100%;
+    height: 500vh;
+  }
+  #right {
+    width: 100%;
+    height: 300vh;
+  }
+  #lnav-right {
+    display: flex;
+    gap: 0;
+  }
+  #lnav-right > a {
+    font-size: 1.2em;
+    margin-right: 29px;
+  }
+  #lnav-left > i {
+    font-size: 20px;
+  }
+  #rb-left {
+    width: 80px;
+    height: 30px;
+  }
+}
